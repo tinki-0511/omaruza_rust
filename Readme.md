@@ -1,17 +1,18 @@
-# おまる座RUSTサーバー Season.1
-
+# おまる座RUSTサーバー Season.2
+2022/10/08  
 目次
 <!-- TOC depthFrom:2 -->
 
 - [おまる座RUSTサーバーとは](#おまる座rustサーバーとは)
 - [特徴](#特徴)
+- [Season2変更点](#season2変更点)
 - [使用MOD](#使用mod)
 - [接続方法](#接続方法)
 - [レイドについて](#レイドについて)
 - [各機能の説明](#各機能の説明)
     - [パスワード認証](#パスワード認証)
     - [RemoverTool](#removertool)
-    - [NoStability](#nostability)
+    - [~~NoStability~~](#nostability)
     - [レイド保護](#レイド保護)
     - [ソートボタン](#ソートボタン)
 
@@ -23,18 +24,28 @@
 ## 特徴
 * 月1ワイプ（第一金曜23時）  
 * パスワード認証による野良対策（[説明](#パスワード認証)）  
-* マ〇クラ的建築の許可（[説明](#nostability)）
+* ~~マ〇クラ的建築の許可（[説明](#nostability)）~~ Season2で削除
 * 風化速度の緩和（通常時の25%減）
 * 1日の長さの調整（昼40分、夜10分）  
 * オフラインレイド保護機能（[説明](#レイド保護)）  
 * 自身の建築物・設置物の自由な除去（[説明](#removertool)）  
 * アイテムボックスのソートボタン（[説明](#ソートボタン)）  
 
+## Season2変更点
+* MOD:Better No Stabilityの削除  
+レイドバランス調整のためマ〇クラ的建築ができなくなりました。  
+* スタックサイズ変更  
+建築系資材（木、石、鉄）のスタックサイズ3倍（1000->3000）  
+その他一部アイテムもスタックサイズを増加  
+* **レイドルール変更**  
+シーズン２ではオフラインレイドを許可します  
+ただし、オフラインレイドの場合建築物へのダメージが20%軽減されます  
+
 ## 使用MOD
 * [Authentication](https://umod.org/plugins/authentication)
 * [Time Of Day](https://umod.org/plugins/time-of-day)
 * [Remover Tool](https://umod.org/plugins/remover-tool)
-* [Better No Stability](https://umod.org/plugins/better-no-stability)
+* ~~[Better No Stability](https://umod.org/plugins/better-no-stability)~~
 * [Raid Protection](https://umod.org/plugins/raid-protection)
 * [No Decay](https://umod.org/plugins/no-decay)
 * [Sort Button](https://umod.org/plugins/sort-button)
@@ -84,16 +95,15 @@ TC破壊後にTCを配置して権利を獲得することは禁止とします
 
 ![](./img/removertool/remover.jpg)
 
-### NoStability
-このサーバーでは建築物の安定性を無視して建築ができるようになっています  
-（マ〇クラのように足場を無限に伸ばすなど）  
-ただし、地面に接地していない建築はできません（空中建築は不可）  
+### ~~NoStability~~
+~~このサーバーでは建築物の安定性を無視して建築ができるようになっています~~  
+~~（マ〇クラのように足場を無限に伸ばすなど）~~  
+~~ただし、地面に接地していない建築はできません（ラピュ〇の建築は不可）~~  
 
 ### レイド保護
-シーズン１ではTC登録者全員がログアウト中は建築物へのダメージが無効*1になります  
-つまり建物を殴ってみてダメージが入ったら所有者がオンライン＝レイドOKとなります  
+シーズン２ではTC登録者全員がログアウト中は建築物へのダメージが20％軽減*1されます  
 
-*1: ダメージ無効になるのは最後のTC登録者がログアウトしてから60秒後
+*1: ダメージが軽減されるのは最後のTC登録者がログアウトしてから5分後
 
 ### ソートボタン
 アイテムボックスのソートボタンを押すことでアイテムのソートができます  
